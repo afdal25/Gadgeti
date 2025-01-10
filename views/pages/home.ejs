@@ -1,0 +1,15 @@
+<%- include('../partials/header'); %>
+
+<h1>WELCOME TO GADGETI</h1>
+<P>Discover the latest smartphones.</P>
+
+<div class="product-list">
+    <% products.forEach(product => { %>
+    <div class="product"
+    <img src="<%= product.image %>" alt="<%= product.name %>">
+    <h3><%= product.name %></h3>
+    <p>Price: $<%= product.price %></p>
+</div>
+    <% }) %>
+</div>
+<%- include('../partials/footer'); %>
