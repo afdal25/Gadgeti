@@ -11,6 +11,7 @@ const about = (req, res) => {
 
 const product = async(req, res) => {
     const products = await getProducts();
+    console.log({products})
     res.render('pages/product', { products });
 }
 
